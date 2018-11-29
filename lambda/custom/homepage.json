@@ -1,0 +1,279 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.0.0"
+        }
+    ],
+    "resources": [
+        {
+            "description": "Food Pyramid Colors",
+            "colors": {
+                "myBackgroundColor": "#F9F9F9",
+                "vegetablesColor": "#38A940",
+                "fruitsColor": "#FEC52E",
+                "grainsColor": "#BC9055",
+                "dairyColor": "#1B93D4",
+                "meatColor": "#EB4040",
+                "fatsColor": "#E84F89"
+            }
+        }
+    ],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "Frame",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "backgroundColor": "@backgroundColor",
+                        "item": [
+                            {
+                                "when": "${@viewportProfile == @hubRoundSmall}",
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "100vh",
+                                "direction": "column",
+                                "alignItems": "center",
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "text": "The Food Pyramid",
+                                        "color": "#000000",
+                                        "width": "100vw",
+                                        "paddingTop": "15vh",
+                                        "paddingBottom": "7vh",
+                                        "textAlign": "center",
+                                        "fontSize": "8vw",
+                                        "fontWeight": "500"
+                                    },
+                                    {
+                                        "type": "ScrollView",
+                                        "width": "100vw",
+                                        "height": "70vh",
+                                        "item": {
+                                            "type": "Container",
+                                            "width": "100vw",
+                                            "height": "120vh",
+                                            "direction": "column",
+                                            "items": [
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@grainsColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "1. Grains",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@vegetablesColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "2. Vegetables",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@fruitsColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "3. Fruits",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@dairyColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "4. Dairy",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@meatColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "5. Meats",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "Frame",
+                                                    "width": "100vw",
+                                                    "height": "20vh",
+                                                    "backgroundColor": "@fatsColor",
+                                                    "items": {
+                                                        "type": "Text",
+                                                        "text": "6. Fats",
+                                                        "width": "100vw",
+                                                        "height": "20vh",
+                                                        "textAlign": "center",
+                                                        "textAlignVertical": "center"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "when": "${@viewportProfile == @hubLandscapeMedium || @viewportProfile == @hubLandscapeLarge || @viewportProfile == @tvLandscapeXLarge}",
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "100vh",
+                                "direction": "column",
+                                "alignItems": "center",
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "text": "The Food Pyramid",
+                                        "color": "#000000",
+                                        "width": "100vw",
+                                        "textAlign": "center",
+                                        "fontSize": "7vw",
+                                        "fontWeight": "100"
+                                    },
+                                    {
+                                        "type": "Frame",
+                                        "height": "10vh",
+                                        "width": "25vw",
+                                        "backgroundColor": "@fatsColor",
+                                        "position": "absolute",
+                                        "top": "25vh",
+                                        "item": {
+                                            "type": "Text",
+                                            "text": "6. Fats",
+                                            "textAlign": "center"
+                                        }
+                                    },
+                                    {
+                                        "type": "Container",
+                                        "width": "55vw",
+                                        "height": "10vh",
+                                        "direction": "row",
+                                        "alignItems": "center",
+                                        "position": "absolute",
+                                        "top": "40vh",
+                                        "items": [
+                                            {
+                                                "type": "Frame",
+                                                "height": "10vh",
+                                                "width": "25vw",
+                                                "backgroundColor": "@dairyColor",
+                                                "item": {
+                                                    "type": "Text",
+                                                    "text": "4. Dairy",
+                                                    "textAlign": "center"
+                                                }
+                                            },
+                                            {
+                                                "type": "Frame",
+                                                "height": "10vh",
+                                                "width": "25vw",
+                                                "backgroundColor": "@meatColor",
+                                                "position": "absolute",
+                                                "left": "27vw",
+                                                "item": {
+                                                    "type": "Text",
+                                                    "text": "5. Meats",
+                                                    "textAlign": "center"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Container",
+                                        "width": "70vw",
+                                        "height": "10vh",
+                                        "direction": "row",
+                                        "alignItems": "center",
+                                        "position": "absolute",
+                                        "top": "55vh",
+                                        "items": [
+                                            {
+                                                "type": "Frame",
+                                                "height": "10vh",
+                                                "width": "35vw",
+                                                "backgroundColor": "@vegetablesColor",
+                                                "item": {
+                                                    "type": "Text",
+                                                    "text": "2. Vegetables",
+                                                    "textAlign": "center"
+                                                }
+                                            },
+                                            {
+                                                "type": "Frame",
+                                                "height": "10vh",
+                                                "width": "35vw",
+                                                "backgroundColor": "@fruitsColor",
+                                                "position": "absolute",
+                                                "left": "37vw",
+                                                "item": {
+                                                    "type": "Text",
+                                                    "text": "3. Fruits",
+                                                    "textAlign": "center"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Frame",
+                                        "height": "10vh",
+                                        "width": "80vw",
+                                        "backgroundColor": "@grainsColor",
+                                        "position": "absolute",
+                                        "top": "70vh",
+                                        "item": {
+                                            "type": "Text",
+                                            "text": "1. Grains",
+                                            "textAlign": "center"
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

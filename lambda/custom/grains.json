@@ -1,0 +1,84 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [
+        {
+            "description": "Food Pyramid Colors",
+            "colors": {
+                "myBackgroundColor": "#F9F9F9",
+                "vegetablesColor": "#38A940",
+                "fruitsColor": "#FEC52E",
+                "grainsColor": "#BC9055",
+                "dairyColor": "#1B93D4",
+                "meatColor": "#EB4040",
+                "fatsColor": "#E84F89"
+            }
+        }
+    ],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "Frame",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "backgroundColor": "@grainsColor",
+                        "item": [
+                            {
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "100vh",
+                                "direction": "row",
+                                "items": [
+                                    {
+                                        "description": "Grains information",
+                                        "type": "Container",
+                                        "width": "50vw",
+                                        "height": "100vh",
+                                        "direction": "column",
+                                        "items": [
+                                            {
+                                                "type": "Text",
+                                                "text": "Grains",
+                                                "color": "#FFFFFF",
+                                                "fontSize": "8vw",
+                                                "fontWeight": "900",
+                                                "position": "absolute",
+                                                "left": "5vw",
+                                                "top": "10vh"
+                                            },
+                                            {
+                                                "type": "Text",
+                                                "text": "These foods provide complex carbohydrates, which are a good source of energy but provide little nutrition.",
+                                                "color": "#FFFFFF",
+                                                "position": "absolute",
+                                                "left": "5vw",
+                                                "top": "30vh"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Image",
+                                        "source": "https://s3.amazonaws.com/apl-food-pyramid/bread.png",
+                                        "width": "100vw",
+                                        "height": "100vh",
+                                        "position": "absolute",
+                                        "left": "30vw"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

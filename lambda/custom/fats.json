@@ -1,0 +1,83 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [
+        {
+            "description": "Food Pyramid Colors",
+            "colors": {
+                "myBackgroundColor": "#F9F9F9",
+                "vegetablesColor": "#38A940",
+                "fruitsColor": "#FEC52E",
+                "grainsColor": "#BC9055",
+                "dairyColor": "#1B93D4",
+                "meatColor": "#EB4040",
+                "fatsColor": "#E84F89"
+            }
+        }
+    ],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "items": [
+            {
+                "type": "Container",
+                "width": "100vw",
+                "height": "100vh",
+                "items": [
+                    {
+                        "type": "Frame",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "backgroundColor": "@fatsColor",
+                        "item": [
+                            {
+                                "type": "Container",
+                                "width": "100vw",
+                                "height": "100vh",
+                                "direction": "row",
+                                "items": [
+                                    {
+                                        "type": "Container",
+                                        "width": "50vw",
+                                        "height": "100vh",
+                                        "direction": "column",
+                                        "items": [
+                                            {
+                                                "type": "Text",
+                                                "text": "Fats",
+                                                "color": "#FFFFFF",
+                                                "fontSize": "8vw",
+                                                "fontWeight": "900",
+                                                "position": "absolute",
+                                                "left": "5vw",
+                                                "top": "10vh"
+                                            },
+                                            {
+                                                "type": "Text",
+                                                "text": "These foods provide calories, but not much nutrition. These foods include salad dressings, sugars, soft drinks, candies, and desserts.",
+                                                "color": "#FFFFFF",
+                                                "position": "absolute",
+                                                "left": "5vw",
+                                                "top": "30vh"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "Image",
+                                        "source": "https://s3.amazonaws.com/apl-food-pyramid/icecream.png",
+                                        "width": "100vw",
+                                        "height": "100vh",
+                                        "position": "absolute",
+                                        "left": "30vw"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

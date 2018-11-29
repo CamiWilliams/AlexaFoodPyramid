@@ -1,0 +1,126 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "food pyramid",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "GrainsIntent",
+          "slots": [],
+          "samples": [
+            "grains",
+            "grains level",
+            "bread level",
+            "grains tier",
+            "bread tier",
+            "tier one",
+            "level one",
+            "one",
+            "number one"
+          ]
+        },
+        {
+          "name": "VegetablesIntent",
+          "slots": [],
+          "samples": [
+            "vegetables",
+            "vegetables level",
+            "vegetable level",
+            "vegetable tier",
+            "vegetables tier",
+            "tier two",
+            "level two",
+            "two",
+            "number two"
+          ]
+        },
+        {
+          "name": "FruitsIntent",
+          "slots": [],
+          "samples": [
+            "fruits",
+            "fruits level",
+            "fruit level",
+            "fruit tier",
+            "fruits tier",
+            "tier three",
+            "level three",
+            "three",
+            "number three"
+          ]
+        },
+        {
+          "name": "DairyIntent",
+          "slots": [],
+          "samples": [
+            "dairy",
+            "dairy level",
+            "milk level",
+            "cheese level",
+            "dairy tier",
+            "milk tier",
+            "cheese tier",
+            "tier four",
+            "level four",
+            "four",
+            "number four"
+          ]
+        },
+        {
+          "name": "MeatsIntent",
+          "slots": [],
+          "samples": [
+            "meats",
+            "meats level",
+            "fish level",
+            "poultry level",
+            "fish tier",
+            "poultry tier",
+            "meats tier",
+            "tier five",
+            "level five",
+            "five",
+            "number five"
+          ]
+        },
+        {
+          "name": "FatsIntent",
+          "slots": [],
+          "samples": [
+            "fats",
+            "fats level",
+            "sweets level",
+            "sugar level",
+            "sugar tier",
+            "sweets tier",
+            "fats tier",
+            "tier six",
+            "level six",
+            "six",
+            "number six"
+          ]
+        }
+      ]
+    }
+  }
+}
